@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cmunh\\OneDrive\\Área de Trabalho\\Itens Pri\\Faculdade TI\\Projetos de Programação PRI\\FilmesApi\\FilmesApi\\FilmesApi.csproj": {}
+    "C:\\tcc_pri\\FilmesApi\\FilmesApi\\FilmesApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cmunh\\OneDrive\\Área de Trabalho\\Itens Pri\\Faculdade TI\\Projetos de Programação PRI\\FilmesApi\\FilmesApi\\FilmesApi.csproj": {
+    "C:\\tcc_pri\\FilmesApi\\FilmesApi\\FilmesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cmunh\\OneDrive\\Área de Trabalho\\Itens Pri\\Faculdade TI\\Projetos de Programação PRI\\FilmesApi\\FilmesApi\\FilmesApi.csproj",
+        "projectUniqueName": "C:\\tcc_pri\\FilmesApi\\FilmesApi\\FilmesApi.csproj",
         "projectName": "FilmesApi",
-        "projectPath": "C:\\Users\\cmunh\\OneDrive\\Área de Trabalho\\Itens Pri\\Faculdade TI\\Projetos de Programação PRI\\FilmesApi\\FilmesApi\\FilmesApi.csproj",
+        "projectPath": "C:\\tcc_pri\\FilmesApi\\FilmesApi\\FilmesApi.csproj",
         "packagesPath": "C:\\Users\\cmunh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cmunh\\OneDrive\\Área de Trabalho\\Itens Pri\\Faculdade TI\\Projetos de Programação PRI\\FilmesApi\\FilmesApi\\obj\\",
+        "outputPath": "C:\\tcc_pri\\FilmesApi\\FilmesApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cmunh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.29, )"

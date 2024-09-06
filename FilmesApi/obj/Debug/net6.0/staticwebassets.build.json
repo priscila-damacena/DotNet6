@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "fPBSU3WQUdHCE+U5UFGXi1meA0D1rbudDrvLHjeKe/s=",
-  "Source": "FilmesApi",
-  "BasePath": "_content/FilmesApi",
+  "Hash": "9HpFlZgdxy3cPYKTwqgAlMYih09Siv5UH0aFgjze8jo=",
+  "Source": "LivrosApi",
+  "BasePath": "_content/LivrosApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
