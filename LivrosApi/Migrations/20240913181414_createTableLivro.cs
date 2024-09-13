@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace LivrosApi.Migrations
+namespace Livros.Api.Migrations
 {
-    public partial class CriandoTabelaDeLivro : Migration
+    public partial class createTableLivro : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -22,7 +22,7 @@ namespace LivrosApi.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Genero = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Duracao = table.Column<int>(type: "int", nullable: false)
+                    QtdePagina = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

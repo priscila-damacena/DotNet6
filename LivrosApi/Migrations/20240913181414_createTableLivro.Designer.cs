@@ -2,16 +2,18 @@
 using LivrosApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace LivrosApi.Migrations
+namespace Livros.Api.Migrations
 {
     [DbContext(typeof(LivroContext))]
-    partial class LivroContextModelSnapshot : ModelSnapshot
+    [Migration("20240913181414_createTableLivro")]
+    partial class createTableLivro
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,13 +26,13 @@ namespace LivrosApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Duracao")
-                        .HasColumnType("int");
-
                     b.Property<string>("Genero")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
+
+                    b.Property<int>("QtdePagina")
+                        .HasColumnType("int");
 
                     b.Property<string>("Titulo")
                         .IsRequired()

@@ -9,7 +9,7 @@ namespace LivrosApi.Data.Dtos
         
         public string Genero { get; set; }
         
-        public int Duracao { get; set; }
+        public int qtdePagina { get; set; }
         
         public DateTime HoraDaConsulta { get; set; } = DateTime.Now;
 
