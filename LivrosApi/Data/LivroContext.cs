@@ -1,4 +1,5 @@
-﻿using LivrosApi.Models;
+﻿using Livros.Api.Models;
+using LivrosApi.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace LivrosApi.Data;
@@ -11,5 +12,13 @@ namespace LivrosApi.Data;
                 
         }
     public DbSet<Livro> Livros { get; set; }
-    
+
+    public DbSet<Usuario> Usuarios { get; set; }
+
+    public DbSet<Login> Logins { get; set; }
+
+    public DbSet<Publicacao> Publicacoes { get; set; }
+
+    public DbSet<Comentario> Comentarios { get; set; }
+
 }
