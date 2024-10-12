@@ -66,7 +66,7 @@ namespace Livros.Api.Migrations
                     b.Property<int>("Cpf")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("DataDeNascimento")
+                    b.Property<DateOnly>("DataDeNascimento")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Email")
