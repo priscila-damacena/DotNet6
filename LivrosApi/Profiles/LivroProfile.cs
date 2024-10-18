@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using LivrosApi.Data.Dtos;
+using Livros.Api.Data.Dtos.LivroDto;
 using LivrosApi.Models;
 
 namespace LivrosApi.Profiles

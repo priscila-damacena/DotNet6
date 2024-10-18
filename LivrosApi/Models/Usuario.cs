@@ -16,11 +16,10 @@ public class Usuario
     public string Cpf { get; set; }
 
     [Required(ErrorMessage = " O data de nascimento é obrigatório")]
-    public DateOnly DataDeNascimento{ get; set; }
+    public DateTime DataDeNascimento { get; set; }
 
     [Required(ErrorMessage = " O email é obrigatório")]
     public string Email { get; set; }
 
-    public  List<Livro> Livro { get; set; }
 
 }

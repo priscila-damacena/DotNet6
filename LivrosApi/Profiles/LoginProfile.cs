@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using LivrosApi.Data.Dtos;
+using Livros.Api.Data.Dtos.LoginDto;
+using Livros.Api.Data.Dtos.UsuarioDto;
 using LivrosApi.Models;
 
 namespace LivrosApi.Profiles
@@ -8,8 +9,10 @@ namespace LivrosApi.Profiles
     {
         public LoginProfile()
         {
+            CreateMap<ReadLoginDto, Login>();
             CreateMap<Login, ReadLoginDto>();
-            CreateMap<Usuario, ReadLoginDto>();
+            CreateMap<Login, CreateLoginDto>();
+            CreateMap<CreateLoginDto, Login>();
         }
     }
 }

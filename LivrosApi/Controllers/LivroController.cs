@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using Livros.Api.Data.Dtos.LivroDto;
 using LivrosApi.Data;
-using LivrosApi.Data.Dtos;
 using LivrosApi.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -34,7 +34,7 @@ public class LivroController : ControllerBase
         Livro Livro = _mapper.Map<Livro>(LivroDto);
         _context.Livros.Add(Livro);
         _context.SaveChanges();
-        return CreatedAtAction(nameof(RecuparaLivroPorId), new { id = Livro.Id }, Livro);
+        return CreatedAtAction(nameof(RecuperaLivroPorId), new { id = Livro.Id }, Livro);
     }
 
     [HttpGet]
@@ -43,7 +43,7 @@ public class LivroController : ControllerBase
         return _mapper.Map<List<ReadLivroDto>>(_context.Livros.Skip(skip).Take(take));
     }
     [HttpGet("{id}")]
-    public IActionResult RecuparaLivroPorId(int id)
+    public IActionResult RecuperaLivroPorId(int id)
     {
         var Livro = _context.Livros.FirstOrDefault(Livros => Livros.Id == id);
         if (Livro == null) return NotFound();
