@@ -11,7 +11,7 @@ namespace Livros.Api.Data.Dtos.LivroDto
 
         public int qtdePagina { get; set; }
 
-        public int Autor { get; set; }
+        public string Autor { get; set; }
 
         public string Imagem { get; set; }
 

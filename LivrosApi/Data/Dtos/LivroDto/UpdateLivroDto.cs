@@ -15,7 +15,7 @@ namespace Livros.Api.Data.Dtos.LivroDto
         public int QtdePagina { get; set; }
         [Required(ErrorMessage = " O nome do autor é obrigatório")]
         [MaxLength(100, ErrorMessage = "O tamanho do nome do autor não pode exceder 100 caracteres")]
-        public int Autor { get; set; }
+        public string Autor { get; set; }
 
         [Required(ErrorMessage = "A imagem do Livro é obrigatório")]
         public string Imagem { get; set; }
