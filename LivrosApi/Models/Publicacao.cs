@@ -4,6 +4,18 @@ namespace Livros.Api.Models
 {
     public class Publicacao
     {
+        public Publicacao(Usuario usuario, Livro livro, string resenha)
+        {
+            Usuario = usuario;
+            Livro = livro;
+            Resenha = resenha;
+        }
+
+        public Publicacao()
+        {
+
+        }
+
         [Key]
         [Required]
         public int Id { get; set; }
