@@ -18,7 +18,6 @@ namespace Livros.Api.Data.Dtos.LivroDto
         [MaxLength(100, ErrorMessage = "O tamanho do nome do autor não pode exceder 100 caracteres")]
         public string Autor { get; set; }
 
-        [Required(ErrorMessage = "A imagem do Livro é obrigatório")]
         public string Imagem { get; set; }
 
     }

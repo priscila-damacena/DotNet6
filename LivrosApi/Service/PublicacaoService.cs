@@ -23,6 +23,11 @@ namespace Livros.Api.Service
             if (publicacao == null) return new Publicacao();
             return publicacao;
         }
+        public List<Publicacao> RecuperarPublicacoes()
+        {
+            return _context.Publicacoes.ToList();
+
+        }
 
         public Publicacao AdicionarPublicacao(Publicacao publicacao)
         {

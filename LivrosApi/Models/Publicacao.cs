@@ -4,10 +4,10 @@ namespace Livros.Api.Models
 {
     public class Publicacao
     {
-        public Publicacao(Usuario usuario, Livro livro, string resenha)
+        public Publicacao(int usuario, int livro, string resenha)
         {
-            Usuario = usuario;
-            Livro = livro;
+            UsuarioId = usuario;
+            LivroId = livro;
             Resenha = resenha;
         }
 
@@ -20,9 +20,9 @@ namespace Livros.Api.Models
         [Required]
         public int Id { get; set; }
 
-        public Usuario Usuario { get; set; }
+        public int UsuarioId { get; set; }
 
-        public Livro Livro { get; set; }
+        public int LivroId { get; set; }
 
         public List<Comentario> Comentario { get; set; }
 
